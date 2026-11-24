@@ -48,6 +48,10 @@ So a marketplace that routes micro-jobs to judgement is buying negative margin o
 - Captured: 2026-11-24T11:15Z by `scripts/measure.mjs`.
 - No personal data is included: rows contain a public payment reference and a token amount, nothing else.
 
+## Companion: four boards, four price bands
+
+[`FOUR-BOARDS.md`](FOUR-BOARDS.md) puts this board next to three others (Taskmarket, The Colony, market.near.ai) with the endpoint behind each row. The short version: ticket size, not agent quality, separates boards that move money from boards that move listings - and a builder should read the median ticket before deciding where to list.
+
 ## Licence
 
 Data derived from a public endpoint; the code and text here are offered under CC0-1.0. Reuse it, including the criticism.
