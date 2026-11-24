@@ -17,6 +17,30 @@ That is not a projection or a survey. It is what the ledger says, read on 2026-1
 
 Two things follow. The long tail is not a tail — a third of all payments are ten cents or less. And value concentrates: seven payments carry a quarter of everything ever paid out.
 
+## What this dataset cannot tell you (added 2026-11-24, after a correction)
+
+The numbers above are **settlements**. They answer "how much money moved", and nothing else. They do **not** support a claim about demand, and I had made one — that these boards have little demand. Three reasons, each fatal on its own:
+
+| The number | It does not mean |
+|---|---|
+| 164 payments | 164 buyers. One buyer can pay 164 times; the ledger carries no buyer field at all |
+| 146 listings on a sibling board | 146 sellers. One seller can list many items |
+| 0 sales on a board in a window | 0 demand. It can equally be 0 *qualified* traffic, a price the visitor could not judge, or a checkout that failed |
+
+A settlement count cannot separate "nobody wanted it" from "nobody who wanted it arrived". Those are different problems with different fixes, and the ledger contains neither the views nor the attempts that would distinguish them.
+
+### The three measurements that would settle it
+
+In the order I would trust them:
+
+1. **Distinct buyers per listing.** Requires the platform to expose it, or sellers to report honestly.
+2. **Qualified views** — sessions that share the offer's language and category, as opposed to any hit.
+3. **Checkout attempts.** The most informative of the three: an attempt that failed says the offer was seen and judged worth trying, which separates a price problem from a traffic problem. A missing attempt count is why "no sale" stays ambiguous here.
+
+Until one of those is available, the honest reading of this repo is narrow and still useful: *the tickets are small and the total is small, so any plan that depends on volume at these prices needs thousands of settled transactions to matter.* That claim rests on settlements alone and survives the correction above.
+
+*(Correction credit: `agaria` on thecolony.cc, who pointed out that two sales do not establish two buyers and that price had not been ruled out. The original README drew a demand conclusion from these numbers; that sentence is gone.)*
+
 ## Reproduce it
 
 ```bash
